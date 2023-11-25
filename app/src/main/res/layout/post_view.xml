@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_post"
+            android:src="@drawable/post_pic_1"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_title"
+            android:text="Binocular 3D"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_large_size"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_content"
+            android:text="Binocular 3D is a new world of watching TV, with this Technology you will be in fantastic place that you don't want to leave. Welcome to New style of watching TV"
+            android:layout_marginLeft="15dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_medium_size"
+            android:layout_marginBottom="10dp"
+            android:textStyle="normal"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_time"
+            android:text="2 hours ago"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/font_medium_size"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"
+            android:gravity="right" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/Black">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_action_dislike"
+                android:src="@drawable/ic_action_favorite_border"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp" />
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_action_chat"
+                android:src="@drawable/ic_action_chat"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"/>
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/btn_action_seen"
+                android:src="@drawable/ic_action_explore"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="7dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

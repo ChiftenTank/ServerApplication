@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.joker.server">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Register_Activity" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".Home_Activity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Post_Activity" />
+        <activity android:name=".Post_RecyclerView_Activity" />
+        <activity android:name=".Notify_Activity"/>
+        <activity android:name=".Noti_Activity" />
+        <activity android:name=".Noti1_Activity" />
+        <activity android:name=".Noti2_Activity" />
+        <activity android:name=".Sensor_Activity" />
+        <activity android:name=".Accelrate_Activity" />
+        <activity android:name=".Light_Activity" />
+        <activity android:name=".Gallery_Activity"/>
+        <activity android:name=".Image_Activity"></activity>
+    </application>
+
+</manifest>

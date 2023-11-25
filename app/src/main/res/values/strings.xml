@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Server</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">"Email: milad.homaee@gmail.com | Tel:+989106837752"</string>
+    <string name="EXIT">"Are You Sure?"</string>
+    <string name="link_text"><u>New User? Please Register!</u></string>
+</resources>

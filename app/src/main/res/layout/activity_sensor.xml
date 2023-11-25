@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#bdbdbd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sensor_Activity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_light"
+        android:text="Light Sensor"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_accel"
+        android:text="Accelerometer Sensor"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pic"/>
+
+</LinearLayout>

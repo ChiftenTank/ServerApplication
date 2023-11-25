@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/news"
+    tools:context="com.example.joker.server.Register_Activity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
+        android:id="@+id/background_pic"
+        android:src="@drawable/register_icon"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edt_name"
+            android:layout_marginTop="@dimen/font_large_size"
+            android:hint="Write your Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/edittext_select"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edt_email"
+            android:layout_marginTop="@dimen/font_large_size"
+            android:hint="Write your E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/edittext_select"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edt_password"
+            android:layout_marginTop="@dimen/font_large_size"
+            android:hint="Write your Password"
+            android:inputType="textPersonName"
+            android:paddingLeft="20dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/edittext_select"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/edt_confp"
+            android:layout_marginTop="@dimen/font_large_size"
+            android:hint="Confirm your Password"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/edittext_select"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prog_load"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/btn_reg"
+        android:layout_marginTop="60dp"
+        android:text="Register"
+        android:textColor="@color/Black"
+        android:background="@drawable/button1_select"/>
+
+</LinearLayout>

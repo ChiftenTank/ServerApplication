@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joker.server.Home_Activity"
+    android:background="@drawable/news"
+    >
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/White"
+        android:id="@+id/background_pic"
+        android:src="@drawable/animation1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background_pic"
+        android:text="Welcome"
+        android:gravity="center"
+        android:textColor="@color/bold_blue"
+        android:layout_marginTop="5dp"
+        android:textSize="@dimen/font_large_size"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_mail"
+        android:layout_below="@id/background_pic"
+        android:weightSum="2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button1_select">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_person"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_fn"
+            android:layout_weight="1"
+            android:hint="Name:"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_mail"
+        android:weightSum="2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button1_select">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_email"
+            android:background="@color/White"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edt_em"
+            android:hint="E-mail:"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/Black"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/btn_upl"
+        android:text="Upload Your Image"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/Black"
+        android:background="@drawable/button_animation"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/btn_logout"
+            android:text="Logout"
+            android:textColor="@color/Black"
+            android:background="@drawable/button_animation"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

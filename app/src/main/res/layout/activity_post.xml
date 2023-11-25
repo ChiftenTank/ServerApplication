@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.joker.server.Post_Activity">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post_img"
+                    tools:src="@drawable/post_pic_3"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_tit"
+                    android:text="New Tablet Technology"
+                    android:textColor="@color/Black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_con"
+                    android:text="New Tablet Technology is the Best technology of this generation so far. 2020 is the year of technology"
+                    android:textColor="@color/Black"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_date"
+                    android:text="2 hours ago"
+                    android:textColor="@color/Black"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="12sp"
+                    android:gravity="right"
+                    android:layout_marginRight="15dp"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>
